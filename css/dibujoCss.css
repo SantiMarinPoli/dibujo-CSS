@@ -1,0 +1,174 @@
+:root {
+    --skin: #f6c09c;
+    --background: #ed4042;
+    --red: #ed2860;
+    --dark-red: #680524;
+    --black: #00243a;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--background);
+}
+
+.head {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    background-color: var(--skin);
+    border-radius: 100px;
+    top: 20%;
+    z-index: 1;
+}
+
+.eyes-left {
+    position: absolute;
+    background: var(--white);
+    width: 50px;
+    height: 40px;
+    top: 120px;
+    left: 50px;
+    border-radius: 0 0 50% 50%;
+}
+
+.pupil-left {
+    position: absolute;
+    background-color: var(--black);
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.eyes-right {
+    position: absolute;
+    background: var(--white);
+    width: 50px;
+    height: 40px;
+    top: 120px;
+    right: 50px;
+    border-radius: 0 0 50% 50%;
+}
+
+.pupil-right {
+    position: absolute;
+    background-color: var(--black);
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.nose {
+    position: absolute;
+    background-color: var(--skin);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    top: 150px;
+    left: 60px;
+    z-index: 1;
+}
+
+.mouth {
+    position: absolute;
+    background-color: var(--dark-red);
+    width: 90px;
+    height: 50px;
+    top: 260px;
+    left: 55px;
+    z-index: 1;
+    border-radius: 0 0 100% 100%;
+}
+
+.teeth {
+    position: absolute;
+    background-color: var(--white);
+    width: 60px;
+    height: 20px;
+    border-radius: 0 0 30% 30%;
+}
+
+.tongue {
+    position: absolute;
+    background-color: var(--red);
+    width: 50px;
+    height: 20px;
+    top: 30px;
+    border-radius: 30% 30% 10% 50%;
+    z-index: 1;
+}
+
+.beard {
+    position: absolute;
+    background-color: var(--black);
+    border-radius: 25%;
+    width: 200px;
+    height: 250px;
+    top: 200px;
+    left: 1px;
+    z-index: 0;
+}
+
+.neck {
+    position: relative;
+    background: var(--skin);
+    width: 100px;
+    height: 50px;
+    top: 450px;
+    left: 50px;
+    z-index: 0;
+}
+
+.ear-left {
+    position: absolute;
+    background-color: var(--skin);
+    width: 30px;
+    height: 50px;
+    top: 150px;
+    left: -30px;
+    border-radius: 30% 0 0 30%;
+    opacity: 0.8;
+}
+
+.ear-right {
+    position: absolute;
+    background-color: var(--skin);
+    width: 30px;
+    height: 50px;
+    top: 150px;
+    right: -30px;
+    border-radius: 0 30% 30% 0;
+    opacity: 0.8;
+}
+
+.left {
+    position: absolute;
+    color: var(--dark-red);
+    font-size: 30px;
+    top: 5px;
+    left: 10px;
+    opacity: 0.5;
+}
+
+.right {
+    position: absolute;
+    color: var(--dark-red);
+    font-size: 30px;
+    top: 152px;
+    right: -20px;
+    opacity: 0.5;
+}
